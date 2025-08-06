@@ -1,0 +1,25 @@
+.camisa1 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
+    font-size: large;
+    margin: 50px 0 0 500px;
+    flex-direction: row;
+}
+
+.camisa2 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
+    font-size: large;
+    margin: 50px 0 150px 500px;
+    flex-direction: row-reverse;
+}
+
+.titulo {
+    font-size: larger;
+}
