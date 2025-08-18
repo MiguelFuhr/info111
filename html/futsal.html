@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,6 +8,72 @@
 
   <link rel="shortcut icon" href="../img/icones/icone.png" type="image/x-icon">
   <link rel="stylesheet" href="../css/style.css">
+
+   <style>
+    body {
+      z-index: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      text-align: center;
+    }
+
+    h2 {
+      color: #000000;
+    }
+
+    .carousel-container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .card {
+      min-width: 200px;
+      margin: 10px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      padding: 10px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+    }
+    .buttons {
+      position: absolute;
+      top: 40%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .btn {
+      background-color: #CC5200;
+      color: white;
+      border: none;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    .btn:hover {
+      background-color: #aa4400;
+    }
+  </style>
+
 
 </head>
 <body>
@@ -65,6 +132,7 @@
       </div>
     </a>
 
+
     <a href="contato.html">
       <div class="menu-item">
         <div class="menu-icon">💬</div>
@@ -72,6 +140,73 @@
       </div>
     </a>
   </div>
+
+   <h2>ELENCO <span style="color: #CC5200;">COMPUTARISTICO</span></h2>
+  
+  <div class="carousel-container">
+    <div class="carousel-track" id="track">
+      <div class="card">
+        <img src="../img/Atletas do futsal/Artur.png" alt="Dionisio" height="250" weight="200">
+        <h3>ARTUR DIONISIO</h3>
+        <p>Goleiro</p>
+      </div>
+      <div class="card">
+        <img src="../img/Atletas do futsal/JoaoV.png" alt="Joao Vitor" height="250" weight="200">
+        <h3>JOÃO VITOR</h3>
+        <p>Fixo</p>
+      </div>
+      <!--<div class="card">
+        <img src="https://via.placeholder.com/200x250" alt="Erick">
+        <h3>ERICK</h3>
+        <p>Fixo</p>
+      </div>-->
+      <div class="card">
+        <img src="../img/Atletas do futsal/JoaoF.png" alt="João Felipe" height="250" weight="200">
+        <h3>JOÃO FELIPE</h3>
+        <p>Fixo</p>
+      </div>
+      <div class="card">
+        <img src="../img/Atletas do futsal/image.png" alt="Heitor" height="250" weight="200">
+        <h3>HEITOR</h3>
+        <p>Ala</p>
+      </div>
+      <!--<div class="card">
+        <img src="https://via.placeholder.com/200x250" alt="Antonio">
+        <h3>ANTONIO </h3>
+        <p>Ala</p>
+      </div>-->
+      <div class="card">
+        <img src="../img/Atletas do futsal/Pedro.png" alt="Pedro" height="250" weight="200">
+        <h3>PEDRO</h3>
+        <p>Ala</p>
+      </div>
+      <div class="card">
+        <img src="../img/Atletas do futsal/Henrique.png" alt="Henrique" height="250" weight="200">
+        <h3>HENRIQUE</h3>
+        <p>Pivo</p>
+      </div>
+            <div class="card">
+        <img src="../img/Atletas do futsal/Felipe.png" alt="Felipe" height="250" weight="200">
+        <h3>FELIPE</h3>
+        <p>Pivo</p>
+      </div>
+      <!--<div class="card">
+        <img src="https://via.placeholder.com/200x250" alt="Kleberson">
+        <h3>KLEBERSON</h3>
+        <p>Pivo</p>
+      </div>-->
+    </div>
+
+    <script src="../rodar.js"></script>
+
+    <div class="buttons">
+      <button class="btn" onclick="prev()">&#10094;</button>
+      <button class="btn" onclick="next()">&#10095;</button>
+    </div>
+  </div>
+
+  
+
 
   <footer class="footer-background">
     <h1 class="footer-text">Patrocinadores Master:</h1>
